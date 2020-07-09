@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    font-family: 'Lalezar', cursive;
+}
+
+.black-overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
+
+.vertical-center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.vertical-center-y{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}

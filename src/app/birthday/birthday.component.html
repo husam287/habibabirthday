@@ -1,0 +1,30 @@
+<app-navbar></app-navbar>
+
+
+<header>
+    <div class="content black-overlay">
+        <div class="curved-bg">
+            <div class="card bg-white mb-3 text-dark text-center border-secondary vertical-center " style="max-width: 80%; height: 50vh;">
+                <div class="card-body vertical-center-y ">
+                  <h5 class="card-title">بيبو هانم</h5>
+                  <p> يا رب تبقي على طول مبسوطة و سعيدة و يا رب دايما كل سنة و عيد ميلادك اروع من اللي قبله ♥ </p>
+                  <p class="card-text">كلنا بنقولك كل سنة و انتي طيبة يا اهم واحدة في حياتنا..عاوزه تعرفي مين كلنا؟؟</p>
+                  <p class="card-text">تعالي بس نعملك عيدميلادك الاول</p>
+                  <button 
+                  class="btn btn-block btn-secondary"
+                  (click)="goToPhotos()">يلااا</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="colored-bg" #photoSection>        
+        <div class="container">
+            <div >
+                <app-photo-collection></app-photo-collection>
+
+            </div>
+            
+        </div>
+</main>

@@ -1,0 +1,12 @@
+header{
+    background-image: url('../../assets/photos/birthday/caterina-berger-ETGJjk9o-48-unsplash.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 100vh;
+}
+
+.zoom:hover{
+    zoom: 1.1;
+}
+
