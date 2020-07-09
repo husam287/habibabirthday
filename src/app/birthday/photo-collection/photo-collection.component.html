@@ -1,7 +1,8 @@
 <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
     <ol 
     class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1" ></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2" ></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="3" ></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="4" ></li>
@@ -19,16 +20,15 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="16" ></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="17" ></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="18" ></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="19" ></li>
   </ol>
     <div class="carousel-inner">
       <div 
       [ngClass]="i===0? 'active':''" 
       class="carousel-item"
+      style="height: 100vh;"
       *ngFor="let photo of photos;let i =index">
         <img 
-        class="d-block mx-auto"
-        style="height: 100vh; width:auto ;"
+        class="d-block vertical-center"
         [src]="photo.src">
       </div>
     </div>
