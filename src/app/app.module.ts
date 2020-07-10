@@ -8,6 +8,10 @@ import { BirthdayComponent } from './birthday/birthday.component';
 import { VideosComponent } from './videos/videos.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PhotoCollectionComponent } from './birthday/photo-collection/photo-collection.component';
+import { BtnsComponent } from './videos/btns/btns.component';
+import { ButtonComponent } from './videos/btns/button/button.component';
+import { VideoComponent } from './videos/video/video.component';
+import { VideoStartComponent } from './videos/video-start/video-start.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { PhotoCollectionComponent } from './birthday/photo-collection/photo-coll
     BirthdayComponent,
     VideosComponent,
     NavbarComponent,
-    PhotoCollectionComponent
+    PhotoCollectionComponent,
+    BtnsComponent,
+    ButtonComponent,
+    VideoComponent,
+    VideoStartComponent
   ],
   imports: [
     BrowserModule,

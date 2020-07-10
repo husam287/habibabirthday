@@ -1,0 +1,14 @@
+<h1 *ngIf="!isThereVideo">No video</h1>
+
+
+    <!-- <p>{{displayedVideo}}</p>
+    <h1>{{displayedVideoId}}</h1> -->
+    <video 
+    style="height: 100vh;"
+    class="video-border"
+    [src]="displayedVideo" 
+    controls 
+    width="auto" 
+    autoplay>
+    </video>
+

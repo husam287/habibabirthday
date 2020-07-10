@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-phase1Ended=false;
+phase1Ended=false; //flag indicates the end of phase 1
   constructor() { }
 
   ngOnInit(): void {

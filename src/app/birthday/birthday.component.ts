@@ -14,6 +14,7 @@ export class BirthdayComponent implements OnInit {
 
 
   goToPhotos(){
+    
     this.photoSection.nativeElement.scrollIntoView({block:'start',behavior:'smooth'})
     
   }

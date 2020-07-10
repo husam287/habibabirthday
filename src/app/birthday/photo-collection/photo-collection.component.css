@@ -1,9 +1,13 @@
+
+    /*small Screens*/
 img {
 
     height: auto; 
     width: 100%;
 
 }
+
+                    /*At Large Screens*/
 @media only screen and (min-width: 550px) {
     img {
         height: auto; 

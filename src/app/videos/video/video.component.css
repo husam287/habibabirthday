@@ -1,0 +1,6 @@
+.video-border{
+    border-bottom: 2px dashed #F3969A;
+	
+        box-shadow: inset 0 -1px 0 0 #F3969A, inset 0 1px 0 0 #F3969A, 0 1px 0 0 #F3969A, 0 -1px 0 0 #F3969A;
+	
+}

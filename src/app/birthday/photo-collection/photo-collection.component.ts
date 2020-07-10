@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./photo-collection.component.css']
 })
 export class PhotoCollectionComponent implements OnInit {
+  
+  //Array of the photos srcs
 photos=[
   {src:"assets/photos/habiba/bibo1.png"},
   {src:"assets/photos/habiba/bibo2.png"},

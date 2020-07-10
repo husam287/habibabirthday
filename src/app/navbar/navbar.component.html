@@ -1,25 +1,33 @@
 <nav class="navbar navbar-light navbar-expand-lg bg-transparent fixed-top">
+
+    <!--######################### LOGO ##############################-->
     <a class="navbar-brand text-primary" [routerLink]="['/']">
       <img src="assets/photos/habiba/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
       Bibo's Birthday
     </a>
+
+    <!--######################### button at small screens ##############################-->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--######################### Routes ##############################-->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
           <li class="nav-item">
             <a 
             class="nav-link text-secondary" 
             [routerLink]="['/','birthday']"
-            routerLinkActive="active">Birthday</a>
+            routerLinkActive="border border-primary rounded">Birthday
+            </a>
           </li>
           <li class="nav-item">
             <a 
             class="nav-link text-secondary" 
             [routerLink]="['/','videos']"
-            routerLinkActive="active">Videos</a>
+            routerLinkActive="border border-primary rounded">Videos
+            </a>
           </li>
-        </ul>
-      </div>
+      </ul>
+    </div>
   </nav>
