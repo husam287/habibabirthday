@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { button } from './btns/button/button.model';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -12,6 +13,8 @@ export class VideoManagerService {
     {videoSrc:"assets/videos/birthday2019.mp4",btn:new button('Birthday2019', "assets/photos/habiba/bibo11.jpg")},
     
   ];
+
+  played =new Subject<boolean>();
 
   constructor() { }
 

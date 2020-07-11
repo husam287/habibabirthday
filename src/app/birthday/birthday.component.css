@@ -31,4 +31,7 @@ background-blend-mode: multiply,multiply;
     .no-border-for-phones {
         border: none;
     }
+    .adjust-lines{
+        line-height: 1rem;
+    }
   }

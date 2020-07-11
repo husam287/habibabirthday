@@ -1,9 +1,15 @@
+
+
 <h1 *ngIf="!isThereVideo">No video</h1>
 
 
     <!-- <p>{{displayedVideo}}</p>
     <h1>{{displayedVideoId}}</h1> -->
     <video 
+    #video
+    (play)="onPlay()"
+    (pause)="onPause()"
+    (timeupdate)="onChangeTime()"
     style="height: 100vh;"
     class="video-border"
     [src]="displayedVideo" 
@@ -11,4 +17,9 @@
     width="auto" 
     autoplay>
     </video>
+    <div 
+    #giftDiv
+    *ngIf="gift&&(displayedVideoId===0)">
+        <p>Gift</p>
+    </div>
 

@@ -1,4 +1,4 @@
-<app-navbar></app-navbar>
+<app-navbar *ngIf="!played"></app-navbar>
 
 
 <main class="mt-5">
@@ -9,6 +9,7 @@
                 <div style="min-height: 100vh;">
                     <div class="vertical-center">
                         <router-outlet></router-outlet>
+                        
                         <div>
                             <app-btns></app-btns>
                         </div>

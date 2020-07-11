@@ -7,6 +7,7 @@ import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 })
 export class BirthdayComponent implements OnInit {
 @ViewChild('photoSection') photoSection:ElementRef
+videosButton:string="لأ عاوزه اعرف";
   constructor() { }
 
   ngOnInit(): void {
@@ -14,7 +15,9 @@ export class BirthdayComponent implements OnInit {
 
 
   goToPhotos(){
-    
+    setTimeout(() => {
+      this.videosButton="وريني انتو مين"
+    }, 1000);
     this.photoSection.nativeElement.scrollIntoView({block:'start',behavior:'smooth'})
     
   }

@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewChild, ElementRef } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { VideoManagerService } from '../video-manager.service';
 import { Subscription } from 'rxjs';
@@ -12,7 +12,17 @@ export class VideoComponent implements OnInit ,OnDestroy{
   isThereVideo=false;
   displayedVideo:string;
   displayedVideoId:number;
+
+
   subs:Subscription;
+  subs1:Subscription;
+
+  gift=false;
+  timeToDisplayGift:number=10;
+
+
+  @ViewChild('video') video:ElementRef;
+  @ViewChild('giftDiv') giftDiv:ElementRef;
   constructor(private activeRouter:ActivatedRoute,private videoManager:VideoManagerService) { }
 
   ngOnInit(): void {
@@ -34,5 +44,26 @@ export class VideoComponent implements OnInit ,OnDestroy{
   ngOnDestroy(){
     this.subs.unsubscribe();
   }
+
+  onPlay(){
+    this.videoManager.played.next(true);
+  }
+  onPause(){
+    this.videoManager.played.next(false);
+
+  }
+  onChangeTime(){
+    if(this.video.nativeElement.currentTime>=this.timeToDisplayGift && this.video.nativeElement.currentTime<this.timeToDisplayGift+0.25){
+      this.gift=true;
+      this.video.nativeElement.pause();
+      this.giftDiv.nativeElement.scrollIntoView({block:'end' ,behavior:'smooth'})
+
+    }
+    else
+    this.gift=false;
+    
+  }
+
+
 
 }
