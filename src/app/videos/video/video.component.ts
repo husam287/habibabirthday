@@ -53,15 +53,17 @@ export class VideoComponent implements OnInit ,OnDestroy{
 
   }
   onChangeTime(){
-    if(this.video.nativeElement.currentTime>=this.timeToDisplayGift && this.video.nativeElement.currentTime<this.timeToDisplayGift+0.25){
-      this.gift=true;
-      this.video.nativeElement.pause();
-      this.giftDiv.nativeElement.scrollIntoView({block:'end' ,behavior:'smooth'})
+    if(this.displayedVideoId===0){
+      if(this.video.nativeElement.currentTime>=this.timeToDisplayGift && this.video.nativeElement.currentTime<this.timeToDisplayGift+0.25){
+        this.gift=true;
+        this.video.nativeElement.pause();
+        console.log(this.giftDiv.nativeElement)
+        this.giftDiv.nativeElement.scrollIntoView({block:'end' ,behavior:'smooth'})
 
+      }
+      else
+      this.gift=false;
     }
-    else
-    this.gift=false;
-    
   }
 
 

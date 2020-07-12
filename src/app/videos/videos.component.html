@@ -1,20 +1,21 @@
 <app-navbar *ngIf="!played"></app-navbar>
 
 
-<main class="mt-5">
+<main class="">
     
     <div class="container">
         <div class="row">
-            <div class="col-12 text-center ">
-                <div style="min-height: 100vh;">
-                    <div class="vertical-center">
+            <div class="col-12 text-center "
+                 style="min-height: 100vh;">
+                
+                    <div>
                         <router-outlet></router-outlet>
                         
-                        <div>
-                            <app-btns></app-btns>
-                        </div>
+                        
+                        <app-btns></app-btns>
+                        
                     </div>
-                </div>
+                
             </div>
         </div>
     </div>

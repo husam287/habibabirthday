@@ -31,7 +31,8 @@
       *ngFor="let photo of photos;let i =index">
         <img 
         class="d-block vertical-center"
-        [src]="photo.src">
+        [src]="photo.src"
+        loading="lazy">
       </div>
     </div>
 
