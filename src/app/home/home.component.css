@@ -1,9 +1,17 @@
-header{
+.headerBeforePhase1{
     background-image: url('../../assets/photos/birthday/caterina-berger-ETGJjk9o-48-unsplash.jpg');
     background-size:cover;
     background-repeat: no-repeat;
     background-position: 50%;
     height: 100vh;
+}
+.headerAfterPhase1{
+    background-image: url('../../assets/photos/birthday/birthdayWallpaper2.jpg');
+    background-size:cover;
+    background-position: 50%;
+    background-repeat: repeat;
+    height: 100vh;
+
 }
 
 .zoom:hover{

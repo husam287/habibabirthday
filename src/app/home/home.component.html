@@ -1,4 +1,4 @@
-<header>
+<header [ngClass]="phase1Ended? 'headerAfterPhase1':'headerBeforePhase1'">
     <div class="black-overlay">
         <div class="container">
             <div class="row">
@@ -21,13 +21,14 @@
                 </div>
                                     <!--Section after phase 1 end-->
                 <div *ngIf="phase1Ended" class="vertical-center text-center">
-                    <h2 class="text-light" style="margin-bottom: 100px;">
+                    <h1 class="text-danger" style="font-family: fantasy;">Habiba's birthday Party</h1>
+                    <h4 class="text-light" style="margin-top: 50px;">
                         Are You Readyyyyyyyyyyyyy !!!
-                    </h2>
+                    </h4>
                 
                     <div [routerLink]="['/birthday']" class="zoom btn-group-lg" role="group" aria-label="Basic example">
-                        <button type="button" class="btn-lg btn btn-light text-dark">Aywaaaa</button>
-                        <button type="button" class="btn-lg btn btn-dark"><i class="fas fa-angle-double-right"></i></button>
+                        <button type="button" class="btn btn-outline-primary mr-1">Aywaaaa</button>
+                        <button type="button" class="btn btn-outline-secondary"><i class="fas fa-angle-double-right"></i></button>
                       </div>
                 </div>       
             </div>
