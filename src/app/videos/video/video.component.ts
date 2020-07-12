@@ -18,7 +18,7 @@ export class VideoComponent implements OnInit ,OnDestroy{
   subs1:Subscription;
 
   gift=false;
-  timeToDisplayGift:number=10;
+  timeToDisplayGift:number=63;
 
 
   @ViewChild('video') video:ElementRef;
@@ -57,12 +57,13 @@ export class VideoComponent implements OnInit ,OnDestroy{
       if(this.video.nativeElement.currentTime>=this.timeToDisplayGift && this.video.nativeElement.currentTime<this.timeToDisplayGift+0.25){
         this.gift=true;
         this.video.nativeElement.pause();
-        console.log(this.giftDiv.nativeElement)
-        this.giftDiv.nativeElement.scrollIntoView({block:'end' ,behavior:'smooth'})
+        setTimeout(() => {
+         // console.log(this.giftDiv.nativeElement)
+          this.giftDiv.nativeElement.scrollIntoView({block:'end' ,behavior:'smooth'})
+          
+        }, 300);
 
       }
-      else
-      this.gift=false;
     }
   }
 

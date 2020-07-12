@@ -18,3 +18,18 @@
     zoom: 1.1;
 }
 
+@keyframes moving{
+    0% {transform: translateX(0px);}
+    25% {transform: translateX(50px); color: #78C2AD; }
+    50% {transform: translateX(0px);}
+    75% {transform: translateX(-50px); color: #F3969A;}
+    100% {transform: translateX(0px);}
+}
+.animated{
+    color: white;
+    animation-name: moving;
+    animation-duration: 1s;
+    animation-delay: 7s;
+    animation-iteration-count: 50;
+}
+

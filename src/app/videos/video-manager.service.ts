@@ -8,7 +8,7 @@ import { Subject } from 'rxjs';
 export class VideoManagerService {
 
   private videos=[
-    {videoSrc:"assets/videos/test1.mp4",btn:new button('Test', "assets/photos/habiba/hossambibo5.jpg")},
+    {videoSrc:"assets/videos/hossamVideo.mp4",btn:new button('Hossam', "assets/photos/habiba/hossambibo5.jpg")},
     {videoSrc:"assets/videos/birthday2018.mp4",btn:new button('Birthday2018', "assets/photos/habiba/bibo3.jpg")},
     {videoSrc:"assets/videos/birthday2019.mp4",btn:new button('Birthday2019', "assets/photos/habiba/bibo11.jpg")},
     
