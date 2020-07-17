@@ -34,6 +34,7 @@ photos=[
   {src:"assets/photos/habiba/hossambibo7.png"},
   {src:"assets/photos/habiba/hossambibo8.jpg"},
   {src:"assets/photos/habiba/hossambibo9.jpg"},
+  {src:"assets/photos/habiba/hossambibo10.jpeg"},
           //menna photos
   {src:"assets/photos/habiba/menna1.png"},
   {src:"assets/photos/habiba/menna2.jpg"},
