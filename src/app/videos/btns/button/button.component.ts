@@ -18,7 +18,9 @@ export class ButtonComponent implements OnInit {
     this.info.id=this.id;
   }
 
-  
+  onClicked(){
+    this.info.clicked=true;
+  }
 
 
 

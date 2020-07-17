@@ -12,6 +12,7 @@ import { BtnsComponent } from './videos/btns/btns.component';
 import { ButtonComponent } from './videos/btns/button/button.component';
 import { VideoComponent } from './videos/video/video.component';
 import { VideoStartComponent } from './videos/video-start/video-start.component';
+import { TapsComponent } from './birthday/photo-collection/taps/taps.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { VideoStartComponent } from './videos/video-start/video-start.component'
     BtnsComponent,
     ButtonComponent,
     VideoComponent,
-    VideoStartComponent
+    VideoStartComponent,
+    TapsComponent
   ],
   imports: [
     BrowserModule,
