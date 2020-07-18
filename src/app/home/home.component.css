@@ -30,27 +30,28 @@
     animation-name: moving;
     animation-duration: 1s;
     animation-delay: 7s;
-    animation-iteration-count: 50;
+    animation-iteration-count: infinite;
 }
 
 
 /* DEMO-SPECIFIC STYLES */
 .typewriter{
     color: #fff;
+    opacity: 0;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid #F3969A; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
-      typing 3.5s steps(50, end),
+      typing 3.5s steps(50, end) 1.5s forwards,
       blink-caret .5s step-end infinite;
   }
   
   /* The typing effect */
   @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+    from { width: 0 ;opacity: 1;}
+    to { width: 100%;opacity: 1; }
   }
   
   /* The typewriter cursor effect */

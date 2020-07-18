@@ -67,7 +67,16 @@ photos=[
   {src:"assets/photos/habiba/jean7.jpeg"},
   {src:"assets/photos/habiba/jean8.jpeg"},
   {src:"assets/photos/habiba/jean9.jpeg"},
-  {src:"assets/photos/habiba/jean10.jpeg"},
+            //Jean Photos
+  {src:"assets/photos/habiba/haidy1.jpg"},
+  {src:"assets/photos/habiba/haidy2.jpg"},
+  {src:"assets/photos/habiba/haidy3.jpg"},
+  {src:"assets/photos/habiba/haidy4.jpg"},
+  {src:"assets/photos/habiba/haidy5.jpg"},
+           //Radwa Photos
+  {src:"assets/photos/habiba/radwa1.jpg"},
+  {src:"assets/photos/habiba/radwa2.jpg"},
+  {src:"assets/photos/habiba/radwa3.jpg"},
   
   
 ];
