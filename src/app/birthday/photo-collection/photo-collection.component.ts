@@ -77,6 +77,16 @@ photos=[
   {src:"assets/photos/habiba/radwa1.jpg"},
   {src:"assets/photos/habiba/radwa2.jpg"},
   {src:"assets/photos/habiba/radwa3.jpg"},
+          //Group Photos
+  {src:"assets/photos/habiba/g1.jpeg"},
+  {src:"assets/photos/habiba/g2.jpeg"},
+  {src:"assets/photos/habiba/g3.jpeg"},
+  {src:"assets/photos/habiba/g4.jpeg"},
+  {src:"assets/photos/habiba/g5.jpeg"},
+  {src:"assets/photos/habiba/g6.jpeg"},
+  {src:"assets/photos/habiba/g7.jpeg"},
+  {src:"assets/photos/habiba/g8.jpeg"},
+  
   
   
 ];
