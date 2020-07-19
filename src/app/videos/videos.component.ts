@@ -19,7 +19,7 @@ export class VideosComponent implements OnInit,OnDestroy {
     this.subs=this.videoManager.played.subscribe(
       data=>this.played=data);
 
-      this.soundTrack.nativeElement.volume=0.3;
+      this.soundTrack.nativeElement.volume=0.25;
   }
   ngOnDestroy(){
     this.subs.unsubscribe();

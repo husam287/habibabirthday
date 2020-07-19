@@ -20,6 +20,7 @@ export class VideoManagerService {
     {videoSrc:"assets/videos/bassmaSalahVideo.mp4",btn:new button('بسمة صلاح', "assets/photos/habiba/bassmaSalahLogo.jpeg")},
     {videoSrc:"assets/videos/bassmaGalalVideo.mp4",btn:new button('بسمة جلال', "assets/photos/habiba/bassmaGalalLogo.jpeg")},
     {videoSrc:"assets/videos/habibaMahmodVideo.mp4",btn:new button('حبيبة محمود', "assets/photos/habiba/habibaMahmodLogo.jpeg")},
+    {videoSrc:"assets/videos/ranaVideo.mp4",btn:new button('أبو صلاح', "assets/photos/habiba/ranaLogo.jpeg")},
     
   ];
 
